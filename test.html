@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div style="color:rgb(0, 204, 255)">Привет</div>
+    <head>
+        <meta charset="UTF-8">
+        <title>Вкусный блог</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body, h2, p {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-size: 18px;
+            }
+            div {
+                margin: 10px;
+                border: 1px solid black;
+                font-size: 20px;
+                height: 80px;
+            }
+            #header {
+                background-color: #eee;
+                height: 80px;
+                border-bottom: 1px solid #ccc;
+                
+            }
+            #sidebar {
+                background-color: #ddd;
+                float: left;
+                width: 150px;
+                height: 160px;
+            }
+            #main {
+                background-color: #f7f7f7;
+                border-left: 1px solid #ccc;
+                margin-left: 250px;
+                padding: 10px;
+            }
+            #footer {
+                border-top: 1px solid #ccc;
+                background-color: #dedede;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header"><h2>Шапка сайта</h2></div>
+        <div id = "sidebar">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О сайте</a></li>
+            </ul>
+        </div>
+        <div id = "main">
+            <h2>Main</h2>
+            <p>qwe...</p>
+        </div>
+        <div id = "footer">
+            <p>qdf</p>
 
-    <input type="button" value="Print" data-color="red">
-</body> 
+        </div>
+        <!-- <form>
+            <fieldset style="background-color:darkgray;">
+                <article>
+                   <center><h1> Вкусный блог</h1><b></center>
+                    <center><h3>Ешь вкусно, ешь правильно!</h3></center>
+                    
+               </article>
+            </fieldset>
+        </form> -->
+        
+    </body> 
 </html>
