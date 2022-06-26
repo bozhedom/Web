@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="../css/style.css" />
+<div class="commment">
+     <h3>Комментарии</h3>{{!--  
+    <article id="comm1" class="com">
+        <img src="https://medaboutme.ru/upload/iblock/3b8/6_p_roduktov_pitaniya_neobkhodimykh_kazhdoy_zhenshchine.jpg"
+            alt="Kristina">
+        <p id="author_com">Кристина | Комментарий №1 | Дата: 30.11.2021</p>
+        <p>*Большое спасибо, приговтовил этот замечательный торт, получилось очень вкусно!!!</p>
+    </article>
+
+    <article id="comm2" class="com">
+        <img src="https://avatars.mds.yandex.net/get-zen_doc/3432422/pub_5ed0c3b2893ed50f27e9c116_5ed0c3eeb4c65f0ede60f6dd/scale_1200"
+            alt="Vlad">
+
+        <p id="author_com">Влад | Комментарий №2 | Дата: 01.01.2022</p>
+        <p>*Здравсвуйте, а у вас случаем нет рецепта на приготовление самого вкусного смузи?!</p>
+
+    </article>
+
+    <article id="comm3" class="com">
+        <img src="https://s.fishki.net/upload/users/2020/01/18/390259/2438460e5d71427a8c3f23fe1a9d11ca.png"
+            alt="Nikita">
+
+        <p id="author_com">Никита | Комментарий №3 | Дата: 22.03.2022</p>
+        <p>*Спасибо автору!!!</p>
+
+    </article> --}}
+
+    {{#each comments}}
+    
+    <article id="comm1" class="com">
+        <img src="https://medaboutme.ru/upload/iblock/3b8/6_p_roduktov_pitaniya_neobkhodimykh_kazhdoy_zhenshchine.jpg" alt="Avatar" style="width: 90px;">
+        <p><span>{{this.name}}</span>  <time datatime="2022-03-14T14:36-00:00">14.03.2022 17:50</time></p>
+        <p>{{this.tetx}}</p>
+    </article>
+    {{/each}}
+
+    <hr class="hr">
+    <b>Добавить комментарий</b>
+    <p></p>
+    </section>
+
+    <form method="post" class="form_add">
+        <fieldset>
+            <input type="text" name="name" required id="name" placeholder="*Введите ваше имя">
+            <label for="name">Имя </label> <br>
+            <label for="comm">Ваш комментарий: </label> <br>
+            <textarea name="comment" required id="comment" cols="30" rows="10" placeholder="Не более 200 символов"
+                maxlength="200"></textarea>
+            <button type="submit">Отправить</button>
+        </fieldset>
+    </form>
+</div>

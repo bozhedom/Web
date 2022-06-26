@@ -1,0 +1,102 @@
+
+header {
+    background-color:rgb(238, 235, 192);
+    font-family: Cavorting;
+}
+
+
+.blockquote-4 {
+    position: relative;
+    font-size: 16px;
+    margin: 16px 16px 46px 16px;
+    border: 2px solid #337AB7;
+    border-radius:20px;
+    padding: 25px;
+}
+.blockquote-4::after {
+    content:"";
+    position: absolute;
+    border: 2px solid #337AB7;
+    border-radius: 0 50px 0 0;
+    width: 40px;
+    height: 40px;
+    bottom: -40px;
+    left: 50px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 2; 
+    box-sizing: border-box;
+} 
+.blockquote-4::before {
+    content:"";
+    position: absolute;
+    width: 80px;
+    border: 6px solid #FFF;
+    bottom: -3px;
+    left: 50px;
+    z-index: 1;
+}
+.blockquote-4 cite {
+    position: absolute;
+    bottom: -30px;
+    left: 110px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #337AB7;
+}
+
+
+.com {
+    border: 2px solid rgb(182, 231, 162);
+    background-color: rgb(25, 73, 35);
+    border-radius: 30px;
+    padding: 5px;
+    margin: 8px 0;
+    opacity: 0.5;
+    width:60%;
+    height: wrap_content;
+    background-image: -webkit-linear-gradient(bottom, rgb(242, 252, 105), rgb(223, 224, 217) 50%);
+    box-shadow: 8px 8px 4px rgb(17, 17, 17);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.com:hover {
+    -webkit-text-shadow: 2px 2px rgb(171, 212, 154);
+    text-shadow: 2px 2px rgb(92, 185, 157);
+    transform: translate(-2px, -2px);
+    -webkit-box-shadow: 10px 10px 4px rgb(46, 45, 45);
+    box-shadow: 10px 10px 4px rgb(46, 45, 45);
+}
+.com:nth-of-type(even) {
+    background-image: -webkit-linear-gradient(bottom, rgb(89, 94, 20), rgb(117, 116, 116) 50%);
+}
+.com::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.com img {
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 8px;
+}
+.com p{
+    padding: 1px;
+    color: rgb(15, 15, 15);
+    font-size: 15px;
+    line-height: 1;
+}
+
+@media (max-width: 500px) {
+    .com {
+      text-align: center;
+      word-wrap: break-word;
+    }
+    .com img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
